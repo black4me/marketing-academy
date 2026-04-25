@@ -77,7 +77,7 @@ function Sidebar({
   );
 
   return (
-    <aside className="h-full flex flex-col bg-[#0b0d12] border-l border-white/5 w-full">
+    <aside className="h-full flex flex-col bg-[#0b0d12] border-r border-white/5 w-full">
       {/* Brand */}
       <div className="flex items-center justify-between gap-3 px-5 pt-5 pb-4">
         <div className="flex items-center gap-3">
@@ -512,13 +512,14 @@ function ModulePage({
           {m.videos.length === 0 && <EmptyHint text="لا توجد فيديوهات متاحة في هذه الوحدة." />}
           {m.videos.map((v) => (
             <div key={v.id} className="rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden">
-              <div className="aspect-video bg-black">
+              <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                 <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${v.id}`}
+                  className="absolute inset-0 w-full h-full"
+                  src={`https://www.youtube.com/embed/${v.id}?rel=0&showinfo=0&modestbranding=1&origin=${typeof window !== 'undefined' ? window.location.origin : ''}`}
                   title={v.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
               <div className="p-5">
@@ -830,7 +831,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex bg-[#08090c] text-zinc-200" dir="ltr">
+    <div className="min-h-screen flex flex-row-reverse bg-[#08090c] text-zinc-200">
       {/* Sidebar desktop */}
       <div className="hidden lg:block w-[300px] xl:w-[320px] shrink-0 sticky top-0 h-screen">
         <Sidebar route={route} go={go} openSearch={() => setSearchOpen(true)} progress={progress} />

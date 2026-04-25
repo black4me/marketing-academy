@@ -349,7 +349,7 @@ export const MODULES: Module[] = [
       },
     ],
     videos: [
-      { id: ytId("https://www.youtube.com/watch?v=OvfI43fEl6E"), title: "مقدمة في أساسيات التسويق", summary: "فيديو ترحيبي يشرح هيكل الكورس وكيفية البدء." },
+      { id: "glAw6-dJSsE", title: "أساسيات التسويق - الدرس الأول", summary: "مقدمة شاملة حول أساسيات التسويق وكيفية البدء في بناء استراتيجيتك." },
     ],
     templates: [TEMPLATES[5]],
     tools: [
