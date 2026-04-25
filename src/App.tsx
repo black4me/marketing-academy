@@ -830,7 +830,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex bg-[#08090c] text-zinc-200" dir="rtl">
+    <div className="min-h-screen flex bg-[#08090c] text-zinc-200">
       {/* Sidebar desktop */}
       <div className="hidden lg:block w-[300px] xl:w-[320px] shrink-0 sticky top-0 h-screen">
         <Sidebar route={route} go={go} openSearch={() => setSearchOpen(true)} progress={progress} />
@@ -847,7 +847,7 @@ export default function App() {
       )}
 
       {/* Main */}
-      <main className="flex-1 min-w-0">
+      <main className="flex-1 min-w-0" dir="rtl">
         {/* Mobile top bar */}
         <div className="lg:hidden sticky top-0 z-30 flex items-center justify-between gap-3 px-4 py-3 bg-[#08090c]/90 backdrop-blur border-b border-white/5">
           <div className="flex items-center gap-2.5">
