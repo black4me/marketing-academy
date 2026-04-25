@@ -348,7 +348,9 @@ export const MODULES: Module[] = [
         apply: "أعد تصميم صفحة منتجك باستخدام Stack القيمة + مرساة سعرية.",
       },
     ],
-    videos: [],
+    videos: [
+      { id: ytId("https://www.youtube.com/watch?v=OvfI43fEl6E"), title: "مقدمة في أساسيات التسويق", summary: "فيديو ترحيبي يشرح هيكل الكورس وكيفية البدء." },
+    ],
     templates: [TEMPLATES[5]],
     tools: [
       { name: "Notion", url: "https://notion.so", desc: "لتنظيم بحث الجمهور والاعتراضات" },

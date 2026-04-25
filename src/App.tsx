@@ -830,7 +830,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex bg-[#08090c] text-zinc-200">
+    <div className="min-h-screen flex bg-[#08090c] text-zinc-200" dir="ltr">
       {/* Sidebar desktop */}
       <div className="hidden lg:block w-[300px] xl:w-[320px] shrink-0 sticky top-0 h-screen">
         <Sidebar route={route} go={go} openSearch={() => setSearchOpen(true)} progress={progress} />
