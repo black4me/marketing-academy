@@ -440,7 +440,9 @@ export const MODULES: Module[] = [
         apply: "ارسم قمع التحويل الخاص بك على ورقة وحدّد المرحلة الأضعف.",
       },
     ],
-    videos: [],
+    videos: [
+      { id: "P6uPXhAYeFQ", title: "نظام جذب العملاء والتحويل", summary: "شرح عملي لكيفية بناء نظام متكامل لجذب العملاء المهتمين وتحويلهم إلى مشترين." },
+    ],
     templates: [TEMPLATES[0]],
     tools: [
       { name: "Tally", url: "https://tally.so", desc: "بناء نماذج وصفحات هبوط مجانية بسرعة" },
