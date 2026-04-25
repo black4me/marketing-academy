@@ -719,7 +719,11 @@ export const MODULES: Module[] = [
         apply: "غيّر نص أزرارك لصيغة المتكلم وقِس النتيجة لمدة 14 يوم.",
       },
     ],
-    videos: [],
+    videos: [
+      { id: "Zq-px0qf2co", title: "سيكولوجية صفحات الهبوط", summary: "كيف تجعل العين تتدفّق نحو زر الشراء باستخدام قواعد التصميم البصري." },
+      { id: "K5qXI2pN9mA", title: "Copywriting: AIDA & PAS", summary: "شرح عملي لأقوى إطارين في الكتابة الإقناعية لتحويل الزوار إلى عملاء." },
+      { id: "oD-ZdHnV1hs", title: "تحسين الـ CTA والتحويل النهائي", summary: "أسرار تحسين أزرار الدعوة لاتخاذ إجراء (CTA) لزيادة معدلات النقر والتحويل." },
+    ],
     templates: [TEMPLATES[0]],
     tools: [
       { name: "Hotjar", url: "https://hotjar.com", desc: "خرائط حرارية لتحليل سلوك زوار الصفحة" },
